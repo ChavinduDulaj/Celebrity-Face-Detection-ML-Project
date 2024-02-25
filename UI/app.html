@@ -8,68 +8,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./dropzone.min.css">
     <link rel="stylesheet" href="./app.css">
+    <style>
+        body {
+            background-image: url('background.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="#">Sports Person Classifier</a>
+        <a class="navbar-brand" href="#" style="font-size: 50px; font-weight: bold;">Sri Lankan Cricketers Classifier </a>
     </nav>
+    
 
     <div class="container">
         <div class="row">
-        <div class="col card-wrapper" data-player="lionel_messi">
+        <div class="col card-wrapper" data-player="dasun_shanaka">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                        <img class="w-100 h-100" src="./images/messi.jpeg" alt="Card image cap">
+                        <img class="w-100 h-100" src="./images/shanaka.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body text-center mt-4">
-                        <h4 class="text-uppercase card-title">Lionel Messi</h4>
+                        <h4 class="text-uppercase card-title">Dasun Shanaka</h4>
                         </p>
                     </div>
                 </div>
             </div>            
-            <div class="col card-wrapper" data-player="maria_sharapova">
+            <div class="col card-wrapper" data-player="kusal_mendis">
                     <div class="card border-0">
                         <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                            <img class="w-100 h-100" src="./images/sharapova.jpeg" alt="Card image cap">
+                            <img class="w-100 h-100" src="./images/kusal.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body text-center mt-4">
-                            <h4 class="text-uppercase card-title">Maria Sharapova</h4>
+                            <h4 class="text-uppercase card-title">Kusal Mendis</h4>
                             </p>
                         </div>
                     </div>
             </div>            
-            <div class="col card-wrapper" data-player="roger_federer">
+            <div class="col card-wrapper" data-player="mahesh_thekshana">
                     <div class="card border-0">
                         <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                            <img class="w-100 h-100" src="./images/federer.jpeg" alt="Card image cap">
+                            <img class="w-100 h-100" src="./images/mahesh.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body text-center mt-4">
-                            <h4 class="text-uppercase card-title">Roger Federer</h4>
+                            <h4 class="text-uppercase card-title">Mahesh Thekshana</h4>
                             </p>
                         </div>
                     </div>
             </div>          
 
-            <div class="col card-wrapper" data-player="serena_williams">
+            <div class="col card-wrapper" data-player="pathum_nissanka">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                        <img class="w-100 h-100" src="./images/serena.jpeg" alt="Card image cap">
+                        <img class="w-100 h-100" src="./images/pathum.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body text-center mt-4">
-                        <h4 class="text-uppercase card-title">Serena Williams</h4>
+                        <h4 class="text-uppercase card-title">Pathum Nissanka</h4>
                         </p>
                     </div>
                 </div>
             </div>      
 
-            <div class="col card-wrapper" data-player="virat_kohli">
+            <div class="col card-wrapper" data-player="wanindu_hasaranga">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                        <img class="w-100 h-100" src="./images/virat.jpeg" alt="Card image cap">
+                        <img class="w-100 h-100" src="./images/wanindu.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body text-center mt-4">
-                        <h4 class="text-uppercase card-title">Virat Kohli</h4>
+                        <h4 class="text-uppercase card-title">Wanindu Hasaranga</h4>
                         </p>
                     </div>
                 </div>
@@ -104,30 +112,30 @@
             </div>
             <div class="col-sm-4" id="divClassTable">
                 <table id="classTable">
-                        <tr>
-                            <th>Player</th>
-                            <th>Probability Score</th>
-                        </tr>
-                        <tr>
-                            <td>Leonel Messi</td>
-                            <td id="score_lionel_messi"></td>
-                        </tr>
-                        <tr>
-                            <td>Maria Sharapova</td>
-                            <td id="score_maria_sharapova"></td>
-                        </tr>
-                        <tr>
-                            <td>Rodger Federer</td>
-                            <td id="score_roger_federer"></td>
-                        </tr>
-                        <tr>
-                            <td>Serena Williams</td>
-                            <td id="score_serena_williams"></td>
-                        </tr>
-                        <tr>
-                            <td>Virat Kohli</td>
-                            <td id="score_virat_kohli"></td>
-                        </tr>
+                    <tr>
+                        <th>Player</th>
+                        <th>Probability</th>
+                    </tr>
+                    <tr>
+                        <td class="player-name">Dasun Shanaka</td>
+                        <td class="probability-score" id="score_dasun_shanaka"></td>
+                    </tr>
+                    <tr>
+                        <td class="player-name">Kusal Mendis</td>
+                        <td class="probability-score" id="score_kusal_mendis"></td>
+                    </tr>
+                    <tr>
+                        <td class="player-name">Mahesh Thekshana</td>
+                        <td class="probability-score" id="score_mahesh_thekshana"></td>
+                    </tr>
+                    <tr>
+                        <td class="player-name">Pathum Nissanka</td>
+                        <td class="probability-score" id="score_pathum_nissanka"></td>
+                    </tr>
+                    <tr>
+                        <td class="player-name">Wanindu Hasaranga</td>
+                        <td class="probability-score" id="score_wanindu_hasaranga"></td>
+                    </tr>
                 </table>
             </div>
             

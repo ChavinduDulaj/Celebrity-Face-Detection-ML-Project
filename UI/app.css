@@ -51,5 +51,54 @@
   padding-bottom: 12px;
   text-align: left;
   background-color: #4CAF50;
+  color: rgb(246, 2, 2);
+}
+
+#classTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#classTable td, #classTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#classTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
   color: white;
+}
+
+
+
+/* Style cells with player names and scores */
+#classTable td.player-name,
+#classTable td.probability-score {
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+#classTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold; /* Make table title bold */
+}
+
+#classTable td {
+  color: white; /* Set text color to white */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Style cells with player names and scores */
+#classTable td.player-name,
+#classTable td.probability-score {
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
 }
